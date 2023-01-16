@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* clar float */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+  *zoom: 1;
+}
+
+/* style */
+body {
+  font: 16px/28px arial, sans-serif;
+  background-color: #eaeaea;
+  color: #333;
+  background-image: url(img/bg.jpg);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  background-color: lightblue;
+  border-bottom: 2px solid salmon;
+  z-index: 999;
+}
+
+.container {
+  width: 960px;
+  background-color: #fff;
+  margin: 60px auto;
+  position: relative;
+}
+
+.ribbontwt {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-image: url(img/ribbon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  text-indent: -99999px;
+}
+
+.header .judul {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: salmon;
+}
+
+.header a:hover {
+  color: skyblue;
+}
+
+.container .hero img {
+  width: 960px;
+  height: 300px;
+  margin-top: 10px;
+  background-size: cover;
+  border-top: 5px solid salmon;
+  border-bottom: 5px solid lightblue;
+}
+
+.articles {
+  width: 960px;
+}
+
+.articles h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.articles a {
+  color: salmon;
+}
+
+.articles .penulis {
+  font-size: 10px;
+  padding: 10px;
+  margin-top: -21px;
+  margin-left: 8px;
+}
+
+.articles .penulis a:hover {
+  color: skyblue;
+}
+
+.articles p {
+  padding: 10px;
+}
+
+.mainbar {
+  width: 600px;
+  float: left;
+  border-right: 3px solid black;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 300px;
+  float: right;
+  margin: 10px;
+}
+
+.sidebar h1 {
+  font-size: 20px;
+}
+
+.sidebar p {
+  font-size: 13px;
+}
+
+.sidebar img {
+  width: 150px;
+  float: left;
+}
+
+.footer {
+  background-color: black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.footer p {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
